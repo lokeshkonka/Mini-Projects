@@ -1,0 +1,117 @@
+/* style.css */
+
+/* Base Setup */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #000000, #1a1a1a);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Quiz Container */
+.container {
+    background: rgba(255, 255, 255, 0.06);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 0 40px rgba(255, 235, 59, 0.15);
+    border-radius: 30px;
+    padding: 3rem 4rem;
+    width: 95%;
+    max-width: 900px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Heading */
+.container h1 {
+    font-size: 3.5rem;
+    margin-bottom: 2.5rem;
+    color: #ffeb3b;
+    text-shadow: 0 0 10px rgba(255, 235, 59, 0.4);
+}
+
+/* Question Text */
+#quiz-container h2 {
+    font-size: 2.2rem;
+    color: #fffde7;
+    background: rgba(255, 255, 0, 0.1);
+    border: 1px solid rgba(255, 255, 0, 0.3);
+    padding: 1.5rem;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+}
+
+/* Choices */
+#choices-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+#choices-list li {
+    background: rgba(255, 255, 0, 0.08);
+    border: 2px solid rgba(255, 255, 0, 0.3);
+    padding: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    border-radius: 16px;
+    cursor: pointer;
+    color: #fffde7;
+    transition: all 0.3s ease;
+}
+
+#choices-list li:hover {
+    background: rgba(255, 255, 0, 0.25);
+    transform: scale(1.02);
+}
+
+/* Buttons */
+button {
+    padding: 1rem 2.5rem;
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background: rgba(255, 255, 0, 0.12);
+    border: 2px solid rgba(255, 255, 0, 0.4);
+    color: #fffde7;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 12px rgba(255, 255, 0, 0.15);
+}
+
+button:hover {
+    background: rgba(255, 255, 0, 0.3);
+    transform: scale(1.05);
+}
+
+/* Result Section */
+#result-container h2 {
+    font-size: 2rem;
+    color: #ffeb3b;
+    margin-bottom: 1rem;
+}
+
+#score {
+    font-size: 2.5rem;
+    color: #fff59d;
+}
+
+/* Hidden Utility */
+.hidden {
+    display: none;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
