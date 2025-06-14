@@ -1,0 +1,33 @@
+html{
+    margin:0;
+}
+h1{
+    text-align: center;
+}
+.canvas{
+    height: auto;
+    width: auto;
+    
+    text-align: center;
+
+}
+.btn{
+    width: 100px;
+    height:100px;
+    display: inline-block;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+#grey{
+    background-color:grey;
+}
+#yellow{
+    background-color:yellow;
+}
+#blue{
+    background-color:blue;
+}
+#white{
+    background-color:whitesmoke;
+}
